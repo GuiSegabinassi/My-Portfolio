@@ -1,0 +1,36 @@
+.home-section {
+  height: 100vh; /* Cobrir a altura da tela */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1a1a1a; /* Fundo escuro */
+  color: #fff; /* Texto branco */
+  text-align: center;
+  padding: 0 20px;
+}
+
+.home-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #e62429; /* Vermelho do Homem-Aranha */
+}
+
+.home-content p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  background-color: #e62429; /* Vermelho do Homem-Aranha */
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #b31b1b; /* Vermelho mais escuro ao passar o mouse */
+}
