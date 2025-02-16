@@ -64,6 +64,8 @@ header nav a:hover {
 @media (max-width: 768px) {
     .menu-btn {
         display: block;
+        background-color: #fff;
+        color: #000;
     }
 
     @media (max-width: 768px) {
