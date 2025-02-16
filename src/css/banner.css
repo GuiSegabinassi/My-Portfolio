@@ -67,36 +67,31 @@ a {
     transition: 0.6s ease;
 }
 
-/* Responsivo para telas menores */
-@media screen and (max-width: 900px) {
+/@media (max-width: 768px) {
     .banner {
-        width: 100%; /* Ocupa a largura total */
-        height: auto; /* Altura dinâmica */
-        margin: 0; /* Remove margens */
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin-left: 0;
+        box-shadow: none;
         padding: 20px;
-        box-shadow: none; /* Remove sombra */
     }
 
     .banner-intro {
         text-align: center;
-        padding: 10px;
     }
 
-    h2 {
-        font-size: 24px;
+    .banner-intro h2 {
+        font-size: 22px;
+        white-space: normal; /* Permite quebra de linha */
     }
 
     .banner-intro span {
-        font-size: 22px;
+        font-size: 18px;
     }
 
     .banner-intro p {
-        font-size: 18px;
+        font-size: 16px;
         padding: 10px;
-    }
-
-    .banner-intro a {
-        padding: 8px 16px;
-        font-size: 14px;
     }
 }

@@ -5,33 +5,22 @@
     box-sizing: border-box;
 }
 
+html, body {
+    overflow-x: hidden; /* Remove qualquer scroll lateral */
+    width: 100%;
+    max-width: 100%;
+}
+
 /* 🌍 Fonte e Estilos Padrão */
 body {
-    font-family: 'Arial', sans-serif; /* Substitua por outra fonte, se necessário */
-    font-size: 16px; /* Tamanho base */
-    line-height: 1.6; /* Altura da linha para melhor leitura */
-    color: #333; /* Cor do texto */
-    background-color: #fff; /* Garante que o fundo fique adequado */
-    max-width: 100%;
-    overflow-x: hidden; /* Evita rolagem lateral desnecessária */
-}
-
-/* 🔹 Ajuste padrão para títulos */
-h1, h2, h3, h4, h5, h6 {
     font-family: 'Arial', sans-serif;
-    color: #ff0000; /* Cor para títulos */
-    margin-bottom: 15px;
-}
-
-/* 🔹 Estilo padrão para links */
-a {
-    color: #e63946;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-a:hover {
-    color: #c0273a;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+    max-width: 100%;
+    min-height: 100vh; /* Garante que o body ocupe toda a tela */
+    position: relative;
 }
 
 /* 🔹 Container flexível para seções */
@@ -39,9 +28,10 @@ a:hover {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
+    overflow: hidden; /* Evita vazamentos de layout */
 }
 
-/* 🔹 Estilização global para imagens */
+/* 🔹 Ajuste padrão para imagens */
 img {
     max-width: 100%;
     height: auto;
@@ -51,12 +41,13 @@ img {
 /* 🔹 Ajuste de espaçamento para seções */
 section {
     padding: 40px 20px;
+    width: 100%; /* Garante que as seções não ultrapassem a tela */
 }
 
 /* 📱 Ajustes para telas menores (até 768px) */
 @media (max-width: 768px) {
     body {
-        font-size: 14px; /* Reduz ligeiramente o tamanho da fonte */
+        font-size: 14px;
     }
 
     .container {
@@ -91,4 +82,3 @@ section {
         font-size: 0.9rem;
     }
 }
-
