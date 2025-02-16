@@ -41,48 +41,61 @@ header nav a:hover {
     border-radius: 9px;
 }
 
-/* 🔹 Estiliza o botão do menu hambúrguer */
+/* 🔹 Botão hambúrguer no canto esquerdo */
 .menu-btn {
-    display: none; /* Oculto por padrão no desktop */
+    display: none; /* Apenas no mobile */
     font-size: 24px;
-    background: none;
+    background: #ff0000;
     border: none;
     cursor: pointer;
-    color: #000;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: 15px;
+    left: 15px; /* Agora ele está na esquerda */
 }
 
-/* 🔹 Esconde o menu no mobile por padrão */
+/* 🔹 Configuração do menu no mobile */
 @media (max-width: 768px) {
     .menu-btn {
-        display: block; /* Exibe o botão apenas no mobile */
-        position: absolute;
-        top: 20px;
-        right: 20px;
+        display: block;
     }
 
     nav {
-        display: none; /* Esconde o menu */
+        display: flex;
         flex-direction: column;
         position: absolute;
-        top: 60px;
-        right: 0;
-        background: #000;
-        width: 100%;
+        top: 0;
+        right: -100%; /* 🔹 Escondido fora da tela no lado direito */
+        width: 70%; /* 🔹 Ocupa apenas parte da tela (ajuste conforme necessário) */
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.95); /* Fundo preto */
         text-align: center;
-        padding: 20px 0;
+        padding-top: 80px;
+        transition: right 0.3s ease-in-out; /* Efeito de deslizamento */
     }
 
     nav a {
         display: block;
-        color: #fff;
-        padding: 10px;
+        padding: 15px;
+        font-size: 22px;
+        color: white;
+        text-decoration: none;
     }
 
-    /* 🔹 Quando o menu for ativado */
+    nav a:hover {
+        background: #ff0000;
+        color: white;
+        border-radius: 5px;
+    }
+
+    /* 🔹 Quando o menu é ativado */
     nav.active {
-        display: flex;
+        right: 0; /* 🔹 Move o menu para dentro da tela */
     }
 }
+
 
 
 
