@@ -40,3 +40,49 @@ header nav a:hover {
     box-shadow: 2px 2px 2px 1px #479bfc;
     border-radius: 9px;
 }
+
+/* 🔹 Estiliza o botão do menu hambúrguer */
+.menu-btn {
+    display: none; /* Oculto por padrão no desktop */
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #000;
+}
+
+/* 🔹 Esconde o menu no mobile por padrão */
+@media (max-width: 768px) {
+    .menu-btn {
+        display: block; /* Exibe o botão apenas no mobile */
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    nav {
+        display: none; /* Esconde o menu */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #000;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    nav a {
+        display: block;
+        color: #fff;
+        padding: 10px;
+    }
+
+    /* 🔹 Quando o menu for ativado */
+    nav.active {
+        display: flex;
+    }
+}
+
+
+
