@@ -1,0 +1,286 @@
+/* 🌙 Estilo do Trilho (Switch) */
+.trilho {
+    width: 50px;
+    height: 30px;
+    background-color: #242424;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+    transition: background 0.3s ease-in-out;
+}
+  
+  /* 🔹 Indicador (Botão do Switch) */
+.trilho .indicador {
+    width: 25px;
+    height: 25px;
+    background-color: #aaa;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 3px;
+    transform: translateY(-50%);
+    transition: all 0.3s ease-in-out;
+}
+  
+  /* 🌙 Quando o Dark Mode for ativado */
+.dark-mode .trilho {
+    background-color: #f1f1f1;
+  }
+  
+.dark-mode .trilho .indicador {
+    left: 22px;
+    background-color: #000;
+}
+
+/* 🌙 Dark Mode Global */
+.dark-mode {
+    background-color: #121212 !important;
+    color: #ffffff !important;
+  }
+  
+
+  .dark-mode body {
+    background-color: #121212 !important;
+  }
+  
+
+  .dark-mode section {
+    background-color: #121212 !important;
+  }
+  
+
+  .dark-mode footer {
+    background-color: #000 !important;
+  }
+  
+
+
+.dark-mode header {
+    background-color: #000;
+}
+  
+
+.dark-mode header h1 {
+    color: #fff;
+}
+  
+
+.dark-mode header nav a {
+    color: #ffffff;
+}
+  
+
+.dark-mode header nav a:hover {
+    background-color: #ff0000;
+    color: #000;
+    border-radius: 9px;
+    box-shadow: 2px 2px 2px 1px #ffffff;
+}
+
+.dark-mode .banner {
+    background-color: #1a1a1a;
+    /* box-shadow: 1px 1px 1px 2px #333; */
+    box-shadow: none;
+  }
+  
+
+  .dark-mode .banner-intro h2 {
+    color: #ffffff;
+  }
+  
+  .dark-mode .banner-intro span {
+    color: #1e90ff;
+  }
+  
+  .dark-mode .banner-intro p {
+    color: #ffffff;
+  }
+  
+
+  .dark-mode .banner-intro a {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #ff0000;
+    box-shadow: 2px 2px 2px 1px #ff0000;
+    transition: 1s ease;
+  }
+  
+  /* 🔹 Efeito hover no botão */
+  .dark-mode .banner-intro a:hover {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+    box-shadow: 2px 2px 2px 1px #000;
+    /* transition: 0.6s ease; */
+  }
+
+/* 🌙 Dark Mode para a seção "Sobre" */
+.dark-mode .about {
+    background-color: #1a1a1a; /* Fundo escuro */
+    color: #ffffff; /* Texto branco */
+  }
+  
+  /* 🔹 Ajustando os títulos */
+  .dark-mode .about h2 {
+    color: #ff0000; /* Vermelho vibrante */
+  }
+  
+  .dark-mode .about-content h3 {
+    color: #ffffff; /* Mantém títulos brancos */
+  }
+  
+  /* 🔹 Ajustando textos destacados */
+  .dark-mode .about-content em {
+    color: #1e90ff; /* Azul vibrante */
+  }
+  
+  .dark-mode .about-content strong {
+    color: #ff0000; /* Vermelho mais vibrante para combinar com o tema */
+  }
+
+/* 🌙 Dark Mode para a seção "Projetos" */
+.dark-mode .projects {
+    background-color: #1a1a1a; /* Fundo escuro */
+    color: #ffffff; /* Texto branco */
+  }
+  
+  /* 🔹 Ajustando o título da seção */
+  .dark-mode .projects h2 {
+    color: #ff0000; /* Vermelho vibrante */
+  }
+  
+  /* 🔹 Ajustando os parágrafos */
+  .dark-mode .projects p {
+    color: #ffffff;
+  }
+  
+  /* 🔹 Ajustando os cards de projeto */
+  .dark-mode .project-item {
+    background-color: #2a2a2a; /* Fundo escuro nos cards */
+    color: #ffffff; /* Texto branco */
+    box-shadow: 2px 2px 2px 1px #fff; /* Ajuste na sombra para manter o tema */
+  }
+  
+  /* 🔹 Ajustando os títulos dentro dos cards */
+  .dark-mode .project-item h3 {
+    color: #ff0000 !important; /* Vermelho vibrante */
+  }
+  
+  /* 🔹 Ajustando os parágrafos dentro dos cards */
+  .dark-mode .project-item p {
+    color: #ffffff;
+  }
+  
+  /* 🔹 Ajustando os links dentro dos cards */
+  .dark-mode .project-item a {
+    color: #1e90ff; /* Azul brilhante para destaque */
+  }
+  
+  /* 🔹 Ajustando o efeito hover nas imagens */
+  .dark-mode .project-item img:hover {
+    filter: brightness(0.8); /* Deixa a imagem mais escura ao passar o mouse */
+    transition: 1s;
+  }
+
+/* 🌙 Dark Mode para a seção "Contato" */
+.dark-mode .contact {
+    background-color: #1a1a1a; /* Fundo escuro */
+    color: #ffffff; /* Texto branco */
+  }
+  
+  /* 🔹 Ajustando o título */
+  .dark-mode .contact h2 {
+    color: #ff0000; /* Vermelho vibrante */
+  }
+  
+  /* 🔹 Ajustando o subtítulo */
+  .dark-mode .contact .subtitle {
+    color: #ffffff; /* Texto branco */
+  }
+  
+  /* 🔹 Ajustando o container do formulário */
+  .dark-mode .contact-container {
+    background-color: #2a2a2a; /* Fundo escuro para o formulário */
+    color: #ffffff;
+    box-shadow: 0 4px 10px #000; /* Sombra alaranjada para manter o tema */
+  }
+  
+  /* 🔹 Ajustando os inputs e textarea */
+  .dark-mode input,
+  .dark-mode textarea {
+    background-color: #333; /* Fundo escuro */
+    color: #ffffff; /* Texto branco */
+    border: none; /* Borda vermelha */
+  }
+  
+  .dark-mode input:focus,
+  .dark-mode textarea:focus {
+    border-color: #ff4500;
+    outline: none;
+  }
+  
+  /* 🔹 Ajustando o botão de envio */
+  .dark-mode button {
+    background-color: #ffff; /* Fundo vermelho */
+    color: #000; /* Texto branco */
+    border: none;
+  }
+  
+  .dark-mode button:hover {
+    background-color: #000; /* Inverte as cores no hover */
+    color: #fff;
+    transition: 1s ease;
+    transform: scale(1.05);
+    box-shadow: 2px 2px 2px 1px #ff0000;
+  }
+  
+  /* 🔹 Ajustando os links das redes sociais */
+  .dark-mode .social-links p {
+    color: #ffffff;
+  }
+  
+  .dark-mode .social-links a {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
+    box-shadow: 1px 1px 1px 2px #ff0000;
+  }
+  
+  .dark-mode .social-links a:hover {
+    background-color: #fff;
+    color: #000;
+    box-shadow: 1px 1px 1px 2px #000;
+  }
+
+/* 🌙 Dark Mode para o Footer */
+.dark-mode .footer {
+    background-color: #000000; /* Fundo preto */
+    color: #ffffff; /* Texto branco */
+  }
+  
+  /* 🔹 Ajustando os títulos dentro do Footer */
+  .dark-mode .footer-container h3 {
+    color: #ff0000; /* Vermelho vibrante */
+  }
+  
+  /* 🔹 Ajustando os parágrafos */
+  .dark-mode .footer-container p {
+    color: #ffffff;
+  }
+  
+  /* 🔹 Ajustando os links */
+  .dark-mode .footer-container a {
+    color: #1e90ff; /* Azul brilhante */
+  }
+  
+  .dark-mode .footer-container a:hover {
+    color: #ff0000; /* Vermelho vibrante no hover */
+  }
+  
+  /* 🔹 Ajustando a seção "Footer Bottom" */
+  .dark-mode .footer-bottom {
+    color: #ffffff;
+  }
+  
+  
+  

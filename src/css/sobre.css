@@ -1,0 +1,42 @@
+.about {
+    padding: 40px;
+    background-color: #fff;
+    color: #000;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.about h2 {
+    display: block;
+    text-align: center;
+    color: #ff0000;
+    margin-bottom: 20px;
+}
+
+.about-content p,
+.about-content ul {
+    margin: 10px 0;
+}
+
+.about-content ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.about-content ul li {
+    margin: 5px 0;
+}
+
+.about-content em {
+    color: #479bfc;
+    font-style: italic;
+}
+
+.about-content strong {
+    color: #ff0000;
+}
+
+.about-content h3 {
+    margin-top: 20px;
+    color: #000;
+}
