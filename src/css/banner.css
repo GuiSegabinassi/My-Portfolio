@@ -66,3 +66,37 @@ a {
     border: 1px solid #000;
     transition: 0.6s ease;
 }
+
+/* Responsivo para telas menores */
+@media screen and (max-width: 900px) {
+    .banner {
+        width: 100%; /* Ocupa a largura total */
+        height: auto; /* Altura dinâmica */
+        margin: 0; /* Remove margens */
+        padding: 20px;
+        box-shadow: none; /* Remove sombra */
+    }
+
+    .banner-intro {
+        text-align: center;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .banner-intro span {
+        font-size: 22px;
+    }
+
+    .banner-intro p {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .banner-intro a {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
