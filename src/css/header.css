@@ -111,7 +111,7 @@ header nav a:hover {
     /* 🔹 Exibe o botão hambúrguer no mobile */
     .menu-btn {
         display: block;
-        background-color: #fff;
+        background-color: #f9f9f9;
         color: #000;
     }
 }
