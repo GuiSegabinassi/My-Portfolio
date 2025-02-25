@@ -1,13 +1,19 @@
 /* 🌙 Estilo do Trilho (Switch) */
 .trilho {
-    width: 50px;
-    height: 30px;
+    width: 40px;
+    height: 25px;
     background-color: #242424;
     border-radius: 20px;
     cursor: pointer;
     position: relative;
     transition: background 0.3s ease-in-out;
-    margin-left: auto;
+}
+
+/* Somente no mobile */
+@media (max-width: 768px) {
+  .trilho {
+    margin-left: auto; /* aqui empurra pro canto no mobile */
+  }
 }
   
   /* 🔹 Indicador (Botão do Switch) */
@@ -36,7 +42,7 @@
 /* 🌙 Dark Mode Global */
 .dark-mode {
     background-color: #121212 !important;
-    color: #ffffff !important;
+    color: #ffffff;
   }
   
 
@@ -222,9 +228,10 @@
   
   /* 🔹 Ajustando o botão de envio */
   .dark-mode button {
-    background-color: #ffff; /* Fundo vermelho */
-    color: #000; /* Texto branco */
+    background-color: #000; /* Fundo vermelho */
+    color: #fff; /* Texto branco */
     border: none;
+    margin-top: -7px;
   }
   
   .dark-mode button:hover {

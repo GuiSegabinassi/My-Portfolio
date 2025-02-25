@@ -84,6 +84,7 @@ a {
     .banner-intro h2 {
         font-size: 22px;
         white-space: normal; /* Permite quebra de linha */
+        margin-top: 35px;
     }
 
     .banner-intro span {

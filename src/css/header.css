@@ -1,10 +1,11 @@
+/* 🌍 RESET GERAL */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: 0;
-    /* overflow: hidden; */
+    box-sizing: border-box;
 }
 
+/* 🔹 HEADER */
 header {
     background-color: #f9f9f9;
     padding: 20px;
@@ -17,9 +18,9 @@ header {
     z-index: 1000;
     left: 0;
     top: 0;
-    overflow: hidden;
 }
 
+/* 🔹 Logo (H1) */
 header h1 {
     font-size: 18px;
     font-weight: normal;
@@ -27,14 +28,19 @@ header h1 {
     max-width: 70%;
 }
 
+/* 🔹 Navegação Padrão (Desktop) */
 header nav {
     display: flex;
     gap: 45px;
+    position: static;
 }
 
+/* 🔹 Links do Menu */
 header nav a {
     color: #000;
     text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s ease;
 }
 
 header nav a:hover {
@@ -44,9 +50,9 @@ header nav a:hover {
     border-radius: 9px;
 }
 
-/* 🔹 Botão hambúrguer no canto esquerdo */
+/* 🔹 Botão Hambúrguer (Mobile) */
 .menu-btn {
-    display: none;
+    display: none; /* Some no desktop */
     font-size: 24px;
     background: #ff0000;
     border: none;
@@ -60,21 +66,15 @@ header nav a:hover {
     z-index: 1100;
 }
 
-
+/* 📱 Estilos Específicos para MOBILE */
 @media (max-width: 768px) {
-    .menu-btn {
-        display: block;
-        background-color: #fff;
-        color: #000;
+    /* 🔹 Esconde o título no mobile */
+    header h1 {
+        display: none;
     }
 
-    @media (max-width: 768px) {
-        header h1 {
-            display: none;
-        }
-    }
-
-    nav {
+    /* 🔹 Torna o menu um "off-screen menu" */
+    #menu {
         display: flex;
         flex-direction: column;
         position: absolute;
@@ -88,7 +88,8 @@ header nav a:hover {
         transition: right 0.3s ease-in-out;
     }
 
-    nav a {
+    /* 🔹 Links do menu no mobile */
+    #menu a {
         display: block;
         padding: 15px;
         font-size: 22px;
@@ -96,18 +97,21 @@ header nav a:hover {
         text-decoration: none;
     }
 
-    nav a:hover {
+    #menu a:hover {
         background: #ff0000;
         color: white;
         border-radius: 5px;
     }
 
     /* 🔹 Quando o menu é ativado */
-    nav.active {
-        right: 0; /* 🔹 Move o menu para dentro da tela */
+    #menu.active {
+        right: 0;
+    }
+
+    /* 🔹 Exibe o botão hambúrguer no mobile */
+    .menu-btn {
+        display: block;
+        background-color: #fff;
+        color: #000;
     }
 }
-
-
-
-

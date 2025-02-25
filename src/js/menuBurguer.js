@@ -1,16 +1,21 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const menuBtn = document.getElementById("menu-toggle");
-    const menu = document.getElementById("menu");
-    const menuLinks = menu.querySelectorAll("a");
+    const menuBtn = document.querySelector(".menu-btn");
+    const menu = document.getElementById("menu"); // Agora garantimos que o ID é usado corretamente
+
+    if (!menuBtn || !menu) {
+        console.error("Erro: O botão do menu ou o nav não foi encontrado!");
+        return;
+    }
 
     menuBtn.addEventListener("click", function () {
-        menu.classList.toggle("active"); // Abre/fecha o menu no lado direito
+        console.log("Botão do menu clicado!");
+        menu.classList.toggle("active"); // O CSS está preparado para esta classe
     });
 
     // Fechar o menu ao clicar em um link
-    menuLinks.forEach(link => {
+    menu.querySelectorAll("a").forEach(link => {
         link.addEventListener("click", function () {
-            menu.classList.remove("active");
+            menu.classList.remove("show");
         });
     });
 });
