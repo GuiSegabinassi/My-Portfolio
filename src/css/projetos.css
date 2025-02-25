@@ -58,3 +58,20 @@
     font-size: 14px;
     color: #000;
 }
+
+@media (max-width: 768px) {
+    .project-list {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 16px;
+        scroll-behavior: smooth;
+        padding: 10px;
+    }
+
+    .project-item {
+        flex: 0 0 90%; /* Cada item ocupa 90% da largura da tela */
+        scroll-snap-align: center;
+    }
+}
+
